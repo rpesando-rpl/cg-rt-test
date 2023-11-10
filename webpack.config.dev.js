@@ -23,7 +23,9 @@ let settings = merge(common, {
     level: "verbose",
   },
   devServer: {
-    contentBase: path.join(__dirname, "static"),
+    static: {
+			directory: path.join(__dirname, "static"),
+		},
     port: portFinderSync.getPort(8080),
   },
   plugins: [

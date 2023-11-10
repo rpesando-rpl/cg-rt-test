@@ -10,9 +10,12 @@ Source of the shaders used by materials.
 
 Requirements:
 
-- node >=14
+- node >=18
 
-You can use `npm` or `yarn` to start the webpack server.
+You can use `yarn` to start the webpack server.
 
-`npm i && npm run start` to run webpack and go to `http://localhost:8080` to see the built application.
 `yarn && yarn start` to run webpack and go to `http://localhost:8080` to see the built application.
+
+## Node suggestion
+
+You can use `nvm` or `n` [https://github.com/tj/n](https://github.com/tj/n) to handle node versions.

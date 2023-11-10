@@ -18,11 +18,19 @@ import fragSrc from "./shaders/simple.frag.glsl";
 const container = document.getElementById("el");
 let camera, scene, renderer, stats;
 
-let init = () => {};
+let init = () => {
+  console.debug("Init Demo!");
+};
 
-let animate = () => {};
+let animate = () => {
+  console.debug("This is animate callback!");
+};
 
-let rendere = () => {};
+let render = () => {
+  console.debug("This is a debug callback")
+};
 
-init();
-animate();
+window.addEventListener("load", () => {
+  init();
+  animate();
+})

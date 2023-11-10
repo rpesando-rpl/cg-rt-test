@@ -1,10 +1,9 @@
 const { merge } = require("webpack-merge");
 const CopyPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 const DefinePlugin = require("webpack").DefinePlugin;
+const TerserPlugin = require("terser-webpack-plugin");
 
 const common = require("./webpack.config.common");
 
@@ -40,7 +39,6 @@ const settings = merge(common, {
     filename: "[name].[contenthash].bundle.min.js"
   },
   plugins: [
-    new NodePolyfillPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       title: "ThreeJS Tech Demo",

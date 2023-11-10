@@ -7,10 +7,6 @@ module.exports = {
     alias: {
       "@": path.join(__dirname, "src"),
     },
-    fallback: { 
-      path: false,
-      "console-browserify": require.resolve('console-browserify')
-    }
   },
   resolveLoader: {
     alias: {

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": false, // generated d.ts files - use only for lib
     "target": "ESNext",
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "importHelpers": true,
